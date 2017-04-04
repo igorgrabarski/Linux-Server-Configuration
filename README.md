@@ -28,5 +28,5 @@ Linux Server Configuration study project
     * Web server(Apache) is configured to respond on port 80 (both by ip address and domain name)
         * Note:Please do not use ` www ` prefix as it is not available on this free of charge domain name
     * PostgreSQL database server was configured to run on this host. User ` grader ` with the same password has been created         Application ` Catalog App  ` utilizes the database named ` catalog ` that has also been created
-    * Appropriate file ` Catalog.conf  ` has been created and configured in dir ` /etc/apache2/sites-available `
+    * Appropriate file ` Catalog.conf  ` has been created and configured in dir ` /etc/apache2/sites-available `
   
