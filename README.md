@@ -14,6 +14,19 @@ Linux Server Configuration study project
   * Flask library (` python-flask `)
   * SQLAlchemy library (` python-sqlalchemy `)
   * Google OAuth library (` python-oauth2client `)
+  * Package list updated
+  * Installed packages upgraded
   
 * Configuration changes made:
-  * 
+  * New user creation with name ` grader `
+  * Adding this user to ` sudoers ` configuration to allow using of ` sudo ` command
+  * Generating of rsa-key for more secured ssh connection
+  * Key-based SSH authentication configuring
+  * Restriction to log in as root remotely configured
+  * SSH port set to 2200
+  * Firewall(ufw) configured to allow only incoming connections on ports 2200, 80 and 123
+  * Web server(Apache) is configured to respond on port 80 (both by ip address and domain name)
+     * Note: Please do not use ` www ` prefix as it is not available on this free of charge domain name
+  * PostgreSQL database server was configured to run on this host. User ` grader ` with the same password has been created. Application ` Catalog App  ` utilizes the database named ` catalog ` that has also been created.
+  * Appropriate file ` Catalog.conf  ` has been created and configured in dir ` /etc/apache2/sites-available `
+  
